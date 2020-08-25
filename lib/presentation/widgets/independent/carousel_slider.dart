@@ -1,4 +1,3 @@
-
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +7,7 @@ class CarouselSlider extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: 2, right: 2),
       child: Container(
-          height: 250.0,
+          height: 225.0,
           width: double.infinity,
           child: Carousel(
             images: [
@@ -16,23 +15,24 @@ class CarouselSlider extends StatelessWidget {
                 'assets/images/carousel/promotion_one.png',
                 height: double.infinity,
                 width: double.infinity,
+                fit: BoxFit.fill,
               ),
              Image.asset(
                 'assets/images/carousel/promotion_two.png',
                 height: double.infinity,
                 width: double.infinity,
+                fit: BoxFit.fill,
               ),
              Image.asset(
                 'assets/images/carousel/promotion_three.png',
                 height: double.infinity,
                 width: double.infinity,
+                fit: BoxFit.fill,
               ),
             ],
-            dotSize: 4.0,
-            dotSpacing: 15.0,
-            dotColor: Colors.purple,
-            indicatorBgPadding: 5.0,
-            dotBgColor: Colors.black54.withOpacity(0.2),
+            dotSize: 0,
+            dotBgColor: Colors.black54.withOpacity(0),
+            showIndicator: false,
             borderRadius: true,
             radius: Radius.circular(20),
             moveIndicatorFromBottom: 180.0,
