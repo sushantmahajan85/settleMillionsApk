@@ -44,7 +44,7 @@ class OpenFlutterScaffoldHome extends StatelessWidget {
               child: Text(
                 'SideBar',
                 style: TextStyle(fontSize: 40, color: AppColors.white),
-                ),
+              ),
               decoration: BoxDecoration(
                 color: AppColors.primary,
               ),
@@ -53,45 +53,60 @@ class OpenFlutterScaffoldHome extends StatelessWidget {
               title: Text(
                 'Home',
                 style: TextStyle(fontSize: 18, color: AppColors.darkBlack),
-                ),
+              ),
               onTap: () {},
             ),
             ListTile(
               title: Text(
                 'Categories',
                 style: TextStyle(fontSize: 18, color: AppColors.darkBlack),
-                ),
+              ),
               onTap: () {},
             ),
             ListTile(
               title: Text(
                 'Settings',
                 style: TextStyle(fontSize: 18, color: AppColors.darkBlack),
-                ),
+              ),
               onTap: () {},
             ),
           ],
         ),
       ),
       appBar: AppBar(
-            title: Text('Home Page', 
-                    style: TextStyle(fontSize: 18),    
-                    ), // TODO add app icon in place of text title 
-            elevation: 8,
-            actions: <Widget>[ 
-              Row(children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.notifications,
-                  color: AppColors.darkBlack,),
-                  onPressed: () {}, //TODO add notification functionality
+          leading: Builder(
+            builder: (ctx) => IconButton(
+              icon: Icon(Icons.menu),
+              color: AppColors.white,
+              onPressed: () {
+                Scaffold.of(ctx).openDrawer();
+              },
+            ),
+          ),
+          backgroundColor: AppColors.secondary,
+          title: Text(
+            'Home Page',
+            style: TextStyle(fontSize: 18, color: AppColors.white),
+          ), // TODO add app icon in place of text title
+          elevation: 8,
+          actions: <Widget>[
+            Row(children: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.notifications,
+                  color: AppColors.white,
                 ),
-                IconButton(
-                  icon: Icon(Icons.search,
-                  color: AppColors.darkBlack,),
-                  onPressed: () {}, //TODO add search
+                onPressed: () {}, //TODO add notification functionality
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.search,
+                  color: AppColors.white,
                 ),
-              ])
-            ]),
+                onPressed: () {}, //TODO add search
+              ),
+            ])
+          ]),
       body: body,
       bottomNavigationBar: OpenFlutterBottomMenu(bottomMenuIndex),
     );
