@@ -23,6 +23,7 @@ export 'independent/product_review_item.dart';
 export 'independent/right_arrow_action.dart';
 export 'independent/scaffold.dart';
 export 'independent/scaffold_home.dart';
+export 'independent/scaffold_profile.dart';
 export 'independent/service_button.dart';
 export 'independent/sortby.dart';
 export 'independent/text_tile.dart';
