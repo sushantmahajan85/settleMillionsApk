@@ -32,12 +32,6 @@ class _Main2ViewState extends State<Main2View> {
 
   TabController tabController;
 
-  //  @override
-  // void initState() {
-  //   super.initState();
-  //   tabController = TabController(length: 1, vsync: this);
-  // }
-
   @override
   Widget build(BuildContext context) {
     var _theme = Theme.of(context);
@@ -46,6 +40,7 @@ class _Main2ViewState extends State<Main2View> {
     return SingleChildScrollView(
       child: Column(children: <Widget>[
       CarouselSlider(),
+      SizedBox(height: 15,),
       TabView(
         tabController: tabController,
       ),

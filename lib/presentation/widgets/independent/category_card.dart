@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:openflutterecommerce/config/theme.dart';
 
 class Category{
   Color begin;
@@ -36,6 +37,11 @@ class CategoryCard extends StatelessWidget {
                   child: Text(
                     category.category,
                     textAlign: TextAlign.right,
+                    style: TextStyle(
+                    fontWeight:FontWeight.w500,
+                    color: AppColors.darkBlack,
+                    fontSize: 15
+                    ),
                   ),
                 ),
               ),
