@@ -102,7 +102,7 @@ class _CategoriesTileViewState extends State<CategoriesTileView>
           ])));
         }
         return SafeArea(
-            child: OpenFlutterScaffold(
+            child: OpenFlutterScaffoldCategories(
                 background: null,
                 title: 'Categories',
                 bottomMenuIndex: 1,
