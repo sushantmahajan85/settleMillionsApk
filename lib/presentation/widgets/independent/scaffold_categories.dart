@@ -41,7 +41,7 @@ class OpenFlutterScaffoldCategories extends StatelessWidget {
               ), 
             backgroundColor: AppColors.secondary,
             actions: <Widget>[
-              IconButton(icon: Icon(Icons.favorite, color: AppColors.red,), onPressed: () {})
+              IconButton(icon: Icon(Icons.search, color: AppColors.white,), onPressed: () {})
             ],
             )
           : null,
