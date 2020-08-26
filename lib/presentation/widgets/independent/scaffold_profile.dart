@@ -40,6 +40,9 @@ class OpenFlutterScaffoldProfile extends StatelessWidget {
               style: TextStyle(color: AppColors.white),
               ), 
             backgroundColor: AppColors.secondary,
+            actions: <Widget>[
+              IconButton(icon: Icon(Icons.favorite, color: AppColors.red,), onPressed: () {})
+            ],
             )
           : null,
       body: body,
