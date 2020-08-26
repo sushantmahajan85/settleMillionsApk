@@ -13,6 +13,7 @@ import 'package:openflutterecommerce/presentation/features/home/home_event.dart'
 import 'package:openflutterecommerce/presentation/features/wrapper.dart';
 import 'package:openflutterecommerce/presentation/widgets/widgets.dart';
 import '../../../widgets/independent/carousel_slider.dart';
+import '../../../widgets/independent/category_slider.dart';
 
 class Main2View extends StatefulWidget {
   final Function changeView;
@@ -28,6 +29,15 @@ class Main2View extends StatefulWidget {
 }
 
 class _Main2ViewState extends State<Main2View> {
+
+  TabController tabController;
+
+  //  @override
+  // void initState() {
+  //   super.initState();
+  //   tabController = TabController(length: 1, vsync: this);
+  // }
+
   @override
   Widget build(BuildContext context) {
     var _theme = Theme.of(context);
@@ -36,6 +46,9 @@ class _Main2ViewState extends State<Main2View> {
     return SingleChildScrollView(
       child: Column(children: <Widget>[
       CarouselSlider(),
+      TabView(
+        tabController: tabController,
+      ),
       OpenFlutterBlockHeader(
         width: widgetWidth,
         title: 'Sale',
