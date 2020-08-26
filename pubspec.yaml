@@ -79,7 +79,6 @@ flutter:
     - assets/i18n/
     - assets/profile/
     - assets/placeholder.png
-    - assets/jeans_5.png
 
   fonts:
     - family: Metropolis

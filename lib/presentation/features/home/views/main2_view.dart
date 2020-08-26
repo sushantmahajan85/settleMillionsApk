@@ -10,17 +10,14 @@ import 'package:openflutterecommerce/data/model/product.dart';
 import 'package:openflutterecommerce/presentation/features/categories/categories.dart';
 import 'package:openflutterecommerce/presentation/features/home/home_bloc.dart';
 import 'package:openflutterecommerce/presentation/features/home/home_event.dart';
-// import 'package:openflutterecommerce/presentation/features/wrapper.dart';
+import 'package:openflutterecommerce/presentation/features/wrapper.dart';
 import 'package:openflutterecommerce/presentation/widgets/widgets.dart';
 import '../../../widgets/independent/carousel_slider.dart';
-import '../../../widgets/independent/category_slider.dart';
 
 class Main2View extends StatefulWidget {
   final Function changeView;
   final List<Product> salesProducts;
   final List<Product> newProducts;
-
- 
 
   const Main2View(
       {Key key, this.changeView, this.salesProducts, this.newProducts})
@@ -31,30 +28,14 @@ class Main2View extends StatefulWidget {
 }
 
 class _Main2ViewState extends State<Main2View> {
-
-   TabController tabController;
-
-
-
-    @override
-  void initState() {
-    super.initState();
-    tabController = TabController(length: 5 );
-
-  }
-
   @override
   Widget build(BuildContext context) {
-    // var _theme = Theme.of(context);
+    var _theme = Theme.of(context);
     var width = MediaQuery.of(context).size.width;
     var widgetWidth = width - AppSizes.sidePadding * 2;
     return SingleChildScrollView(
       child: Column(children: <Widget>[
       CarouselSlider(),
-      // SizedBox(height: 14,),
-      TabView(
-         tabController: tabController,
-         ),
       OpenFlutterBlockHeader(
         width: widgetWidth,
         title: 'Sale',
