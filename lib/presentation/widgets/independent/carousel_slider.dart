@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 class CarouselSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 2, right: 2),
-      child: Container(
+    return Container(
           height: 225.0,
           width: double.infinity,
           child: Carousel(
@@ -37,7 +35,6 @@ class CarouselSlider extends StatelessWidget {
             radius: Radius.circular(20),
             moveIndicatorFromBottom: 180.0,
             noRadiusForIndicator: true,
-          )),
-    );
+          ));
   }
 }
