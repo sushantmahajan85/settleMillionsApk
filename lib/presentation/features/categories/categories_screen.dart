@@ -65,7 +65,7 @@ class _CategoriesWrapperState
   }
 
   Widget buildListScreen(BuildContext context) {
-    return OpenFlutterScaffold(
+    return OpenFlutterScaffoldCategories(
       background: null,
       title: 'Categories',
       body: CategoriesListView(),

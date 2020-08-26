@@ -24,7 +24,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: OpenFlutterScaffold(
+      child: OpenFlutterScaffoldProfile(
         title: 'My Profile',
         body: BlocProvider<ProfileBloc>(
           create: (context) {
